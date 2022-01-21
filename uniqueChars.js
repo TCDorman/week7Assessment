@@ -6,9 +6,9 @@ function uniqueChars (stg) {
 
     for(let i = 0; i < stg.length; i++){
         //loop through string starting at index 0 comparing to i
-        for(let j = 0; j < stg.length; j++){
+        for(let j = i + 1; j < stg.length; j++){
             //if I and j are equal console.log false
-            if( i === j){
+            if( stg[i] === stg[j]){
                 console.log('false')
                 // if i is not equal to j anywhere in the string console.log true
             } else if ( i !== j){

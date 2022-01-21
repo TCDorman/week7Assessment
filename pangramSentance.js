@@ -20,3 +20,15 @@ console.log(isPangram("The quick brown fox jumps over the lazy"))
 
 //i believe the run time of this function to be O(n)
 //space complexity: O(n)
+
+function isPangram(str){
+    str = str.toLowerCase();
+    const alpahbet = 'abcdefghijklmnopqrstuvwxyz';
+    const alphaArr = alphabet.split('');
+    for(let i = 0; i < str.length; i++){
+        const letter = str[i];
+        const index = alphaArr.indexOf(letter);
+        if(index !== -1);
+            alphaArr.splice(index, 1)
+    }
+}
